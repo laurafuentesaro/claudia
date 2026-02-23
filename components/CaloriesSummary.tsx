@@ -31,46 +31,31 @@ export const CaloriesSummary: React.FC<CaloriesSummaryProps> = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
-        <div>
-          <div className="text-xl font-medium text-theme-text">
-            {macros.protein}g
+      <div className="flex gap-3">
+        <div className="flex-1 border border-theme-border rounded-lg px-3 py-2.5">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-theme-accent shrink-0" />
+            <span className="text-lg font-medium text-theme-text">{macros.protein}g</span>
           </div>
-          <div className="text-xs text-theme-muted mt-0.5">
-            Proteina <span className="text-theme-faint">({proteinPercent}%)</span>
-          </div>
+          <div className="text-xs text-theme-muted mt-1 ml-4">Proteina</div>
+          <div className="text-xs text-theme-faint ml-4">{proteinPercent}%</div>
         </div>
-        <div>
-          <div className="text-xl font-medium text-theme-text">
-            {macros.carbs}g
+        <div className="flex-1 border border-theme-border rounded-lg px-3 py-2.5">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-theme-muted shrink-0" />
+            <span className="text-lg font-medium text-theme-text">{macros.carbs}g</span>
           </div>
-          <div className="text-xs text-theme-muted mt-0.5">
-            Carbos <span className="text-theme-faint">({carbsPercent}%)</span>
-          </div>
+          <div className="text-xs text-theme-muted mt-1 ml-4">Carbos</div>
+          <div className="text-xs text-theme-faint ml-4">{carbsPercent}%</div>
         </div>
-        <div>
-          <div className="text-xl font-medium text-theme-text">
-            {macros.fat}g
+        <div className="flex-1 border border-theme-border rounded-lg px-3 py-2.5">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-theme-faint shrink-0" />
+            <span className="text-lg font-medium text-theme-text">{macros.fat}g</span>
           </div>
-          <div className="text-xs text-theme-muted mt-0.5">
-            Grasas <span className="text-theme-faint">({fatPercent}%)</span>
-          </div>
+          <div className="text-xs text-theme-muted mt-1 ml-4">Grasas</div>
+          <div className="text-xs text-theme-faint ml-4">{fatPercent}%</div>
         </div>
-      </div>
-
-      <div className="mt-5 h-1.5 bg-theme-border rounded-full overflow-hidden flex">
-        <div
-          className="bg-theme-text h-full"
-          style={{ width: `${proteinPercent}%` }}
-        />
-        <div
-          className="bg-theme-muted h-full"
-          style={{ width: `${carbsPercent}%` }}
-        />
-        <div
-          className="bg-theme-border-hover h-full"
-          style={{ width: `${fatPercent}%` }}
-        />
       </div>
     </div>
   );
