@@ -73,7 +73,7 @@ export const MealTimelineItem: React.FC<MealTimelineItemProps> = ({
         {/* Expanded recipe detail */}
         {meal.recipe && (
           <div
-            className="overflow-hidden transition-all duration-300 ease-in-out"
+            className="overflow-hidden transition-all duration-300 ease-out-quint"
             style={{
               display: 'grid',
               gridTemplateRows: isExpanded ? '1fr' : '0fr',
@@ -136,7 +136,7 @@ export const MealTimelineItem: React.FC<MealTimelineItemProps> = ({
           {/* Expanded dessert recipe detail */}
           {dessert.recipe && (
             <div
-              className="overflow-hidden transition-all duration-300 ease-in-out"
+              className="overflow-hidden transition-all duration-300 ease-out-quint"
               style={{
                 display: 'grid',
                 gridTemplateRows: dessertExpanded ? '1fr' : '0fr',

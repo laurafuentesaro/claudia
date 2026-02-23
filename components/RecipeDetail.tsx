@@ -76,7 +76,7 @@ export const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipe }) => {
 
       {/* Instructions */}
       <div
-        className="overflow-hidden transition-all duration-300 ease-in-out"
+        className="overflow-hidden transition-all duration-300 ease-out-quint"
         style={{
           display: 'grid',
           gridTemplateRows: showSteps ? '1fr' : '0fr',

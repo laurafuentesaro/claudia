@@ -69,7 +69,7 @@ export const ShoppingListCategory: React.FC<ShoppingListCategoryProps> = ({
 
       {/* Expandable items */}
       <div
-        className="overflow-hidden transition-all duration-300 ease-in-out"
+        className="overflow-hidden transition-all duration-300 ease-out-quint"
         style={{
           display: 'grid',
           gridTemplateRows: expanded ? '1fr' : '0fr',

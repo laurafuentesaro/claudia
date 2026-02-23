@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
         </div>
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-md hover:bg-theme-card transition-colors text-theme-secondary hover:text-theme-text"
+          className="p-2 rounded-md hover:bg-theme-card text-theme-secondary hover:text-theme-text transition-all duration-150 active:scale-[0.97]"
           aria-label="Toggle theme"
         >
           {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}

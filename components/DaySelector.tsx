@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 interface DaySelectorProps {
   days: string[];
@@ -11,12 +11,31 @@ export const DaySelector: React.FC<DaySelectorProps> = ({
   selectedIndex,
   onSelect,
 }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [indicator, setIndicator] = useState({ left: 0, width: 0 });
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const buttons = container.querySelectorAll<HTMLButtonElement>('[data-tab]');
+    const active = buttons[selectedIndex];
+    if (active) {
+      setIndicator({
+        left: active.offsetLeft,
+        width: active.offsetWidth,
+      });
+      if (!ready) requestAnimationFrame(() => setReady(true));
+    }
+  }, [selectedIndex, ready]);
+
   return (
-    <div className="border-b border-theme-border">
-      <div className="flex gap-1 overflow-x-auto scrollbar-thin">
+    <div className="border-b border-theme-border relative">
+      <div ref={containerRef} className="flex gap-1 overflow-x-auto scrollbar-thin">
         {days.map((day, idx) => (
           <button
             key={day}
+            data-tab
             onClick={() => onSelect(idx)}
             className={`
               relative px-4 py-3 text-sm font-medium transition-colors whitespace-nowrap
@@ -27,12 +46,18 @@ export const DaySelector: React.FC<DaySelectorProps> = ({
             `}
           >
             {day}
-            {selectedIndex === idx && (
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-theme-accent" />
-            )}
           </button>
         ))}
       </div>
+      <div
+        className={`absolute bottom-0 h-0.5 bg-theme-accent ${
+          ready ? 'transition-all duration-[250ms] ease-in-out-cubic' : ''
+        }`}
+        style={{
+          left: indicator.left,
+          width: indicator.width,
+        }}
+      />
     </div>
   );
 };

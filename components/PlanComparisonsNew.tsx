@@ -61,7 +61,7 @@ export const PlanComparisons: React.FC = () => {
           onSelect={setSelectedDayIndex}
         />
 
-        <div className="p-6 space-y-6">
+        <div key={selectedDayIndex} className="p-6 space-y-6 animate-fade-in">
           <div>
             <h3 className="text-xl font-semibold text-theme-text tracking-tight">
               {currentPlan.day}

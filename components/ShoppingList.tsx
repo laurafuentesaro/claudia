@@ -72,7 +72,7 @@ export const ShoppingList: React.FC = () => {
         {/* Progress bar */}
         <div className="h-1.5 bg-theme-border rounded-full overflow-hidden">
           <div
-            className="h-full bg-theme-accent rounded-full transition-all duration-300"
+            className="h-full bg-theme-accent rounded-full transition-all duration-300 ease-out-quint"
             style={{ width: `${progressPercent}%` }}
           />
         </div>

@@ -22,7 +22,9 @@ const AppContent: React.FC = () => {
             </p>
           </div>
           <ViewToggle active={view} onChange={setView} />
-          {view === 'plan' ? <PlanComparisons /> : <ShoppingList />}
+          <div key={view} className="animate-fade-in">
+            {view === 'plan' ? <PlanComparisons /> : <ShoppingList />}
+          </div>
         </div>
       </main>
     </div>
