@@ -13,9 +13,9 @@
 | Peso objetivo | ~62 kg (IMC 21.5) |
 | Faltan | ~2 kg |
 | Actividad | Sedentaria a ligera |
-| Preferencias | Come de todo, le gusta el pescado, le gustan las frutas, antojos de dulce despues de comer |
-| Restricciones | No papa, no pasta, no sardinas |
-| Hidratacion | Agua sin gas |
+| Preferencias | Pollo, pescado, mariscos, carnes, ensaladas (verano), sopas (invierno), frutas, antojos de dulce despues de comer |
+| Restricciones | No papa, no pasta, no arroz, no sardinas, no cafe (toma te), no leche, queso minimo (prefiere semillas) |
+| Hidratacion | Agua sin gas, te |
 | Antecedente | Cancer de mama hace 20 anos |
 | Diagnostico | IMO metano (mejorando, menos inflamada) |
 
@@ -36,11 +36,11 @@
 
 | Macro | Gramos | Calorias | % del total |
 |-------|--------|----------|-------------|
-| Proteina | 72g | 288 kcal | 24% |
-| Grasas | 45g | 405 kcal | 34% |
-| Carbohidratos | 127g | 507 kcal | 42% |
+| Proteina | 85g | 340 kcal | 28% |
+| Grasas | 44g | 396 kcal | 33% |
+| Carbohidratos | 116g | 464 kcal | 39% |
 
-**Proteina a ~1.1 g/kg** — importante a los 68 anos para preservar masa muscular durante el deficit.
+**Proteina a ~1.3 g/kg** — crucial a los 68 anos para preservar masa muscular durante el deficit. Prioridad alta.
 
 ### Estructura de Comidas
 
@@ -48,10 +48,10 @@
 |--------|----------|
 | Desayuno | 280-320 kcal |
 | Almuerzo | 300-380 kcal |
-| Postre almuerzo | 70-110 kcal |
-| Merienda (opcional) | 40-90 kcal |
-| Cena | 300-380 kcal |
-| Postre cena | 70-100 kcal |
+| Postre almuerzo | 65-110 kcal |
+| Colacion (opcional) | 40-90 kcal |
+| Cena liviana | 250-340 kcal |
+| Postre cena | 65-100 kcal |
 
 ---
 
@@ -96,7 +96,7 @@ Claudia tiene IMO metano recurrente. El enfoque es moderado — no una dieta est
 ### Platos Principales (cocinar 1 vez, comer 2 dias)
 
 1. **Salmon al Horno con Zapallo y Zanahoria** (~350 kcal) — omega-3, antiinflamatorio
-2. **Merluza a la Plancha con Pure de Zapallo** (~340 kcal) — liviana, buena tolerancia
+2. **Salmon al Horno Almendrado** (~340 kcal) — costra de almendras, proteina extra
 3. **Chop Suey de Pollo + Verdes** (~320 kcal) — clasica del vault
 4. **Ensalada de Cuadril para Enamorar** (~380 kcal) — fin de semana
 5. **Pollo a la Pizzaiola** (~330 kcal) — gratinada, reconfortante
@@ -114,13 +114,13 @@ Claudia tiene IMO metano recurrente. El enfoque es moderado — no una dieta est
 ### Desayunos (~280-320 kcal)
 
 **Todos con huevo (variedad diaria):**
-1. Omelette Caprese — 2 huevos + tomate cherry + mozzarella + cafe (~300 kcal)
-2. Huevos Revueltos + Palta — 2 huevos + 1/4 palta + cafe (~280 kcal)
-3. Huevos con Queso + Mani — 2 huevos + 20g queso + 10g mani + cafe (~310 kcal)
-4. Omelette de Jamon — 2 huevos + 30g jamon + 20g queso + cafe (~290 kcal)
-5. Tostada + Palta + Huevo — 1 tostada integral + 1/4 palta + huevo + cafe (~300 kcal)
-6. Huevos con Jamon + Palta — 2 huevos + 30g jamon + 1/4 palta + cafe (~300 kcal)
-7. Huevos Revueltos + Queso — 2 huevos + 20g queso + tomate + cafe (~290 kcal)
+1. Omelette Caprese — 2 huevos + tomate cherry + semillas + te (~290 kcal)
+2. Huevos Revueltos con Jamon Crudo — 2 huevos + 2 fetas jamon crudo + 1/4 palta + te (~300 kcal)
+3. Huevos con Semillas + Mani — 2 huevos + semillas de calabaza + 10g mani + te (~300 kcal)
+4. Huevos + Palta — 2 huevos + 1/4 palta + te. Opcional: rebanada pan de almendras y lino (~280-320 kcal)
+5. Omelette de Jamon Crudo — 2 huevos + 2 fetas jamon crudo + semillas + te (~290 kcal)
+6. Huevos Revueltos + Palta — 2 huevos + 1/4 palta + te (~280 kcal)
+7. Huevos Revueltos + Tomate — 2 huevos + tomate + semillas + te (~280 kcal)
 
 ### Postres (pre-porcionados, ~70-110 kcal)
 
@@ -141,7 +141,7 @@ Claudia tiene IMO metano recurrente. El enfoque es moderado — no una dieta est
 - Postres de chocolate > postres de fruta (mayor satisfaccion para antojos dulces)
 - Todos los postres de semana pre-porcionados (frascos individuales, trufas congeladas)
 - Postres horneados (brownies, crumble) reservados para fin de semana
-- **No papa. No pasta. No sardinas.**
+- **No papa. No pasta. No arroz. No sardinas. No cafe. No leche. Queso minimo.**
 - Cocinar 1 vez, comer 2 dias — reduce carga de cocina
 - Pescado 3-4 veces por semana (salmon, merluza, atun)
 - Agua sin gas siempre
@@ -155,11 +155,12 @@ Claudia tiene IMO metano recurrente. El enfoque es moderado — no una dieta est
 3. **Variedad:** Rotacion de 12 platos principales + 9 postres evita aburrimiento
 4. **Pescado frecuente:** Le gusta, es saciante y antiinflamatorio
 5. **Cook-for-two-days:** Cocinar 1 vez para 2 dias reduce esfuerzo
-6. **Merienda opcional:** Cafe con mani o frutos rojos — solo si tiene hambre
+6. **Colacion opcional:** Te con mani o frutos rojos — solo si tiene hambre
+7. **Cena liviana:** Tortillas, omelettes, woks, sopas — digestión liviana
 
 ---
 
 ## Fuentes de Recetas
 
-- **Obsidian Vault:** Recetas personales de Claudia — fuente primaria
+- **Recetario personal:** Recetas personales de Claudia — fuente primaria
 - **Recetas clasicas adaptadas:** Agregadas para variedad

@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface SourceBadgeProps {
-  source: 'obsidian' | 'manual';
+  source: 'recetario' | 'manual';
 }
 
 const config = {
-  obsidian: {
-    label: 'Obsidian',
+  recetario: {
+    label: 'Recetario',
     bg: 'bg-purple-500/10',
     text: 'text-purple-400',
     border: 'border-purple-500/20',

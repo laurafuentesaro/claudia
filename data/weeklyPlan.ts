@@ -28,13 +28,13 @@ export type DayPlan = {
 export const WEEKLY_PLAN: DayPlan[] = [
   {
     day: "Lunes",
-    focus: "Inicio de semana — ensalada de atun y pollo crocante",
+    focus: "Inicio de semana — ensalada de atun + ensalada pollo crocante",
     targetCalories: 1200,
-    macros: { protein: 76, carbs: 98, fat: 46 },
+    macros: { protein: 86, carbs: 90, fat: 44 },
     meals: {
       breakfast: {
-        description: "Omelette Caprese: 2 huevos + tomate cherry + mozzarella (30g) + albahaca fresca + cafe con leche deslactosada.",
-        kcal: 300,
+        description: "Omelette Caprese: 2 huevos + tomate cherry + semillas de calabaza + te.",
+        kcal: 290,
       },
       lunch: {
         description: "Completisima Ensalada de Atun: atun al natural con huevo duro, tomate, aceitunas, zanahoria rallada, almendras, semillas de calabaza + mix de verdes con vinagreta de limon y soja.",
@@ -42,22 +42,22 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'ensalada-atun-completa',
       },
       dessertLunch: {
-        description: "Trufas de Cacao by Cora: 1 trufa congelada.",
+        description: "Trufas de Cacao: 1 trufa congelada.",
         kcal: 70,
         recipeId: 'trufas-cacao',
       },
       snack: {
-        description: "(Opcional) Merienda: cafe con 15g de mani tostado.",
+        description: "(Opcional) Colacion: te con 15g de mani tostado.",
         kcal: 90,
       },
       dinner: {
-        description: "Crocante & Colorida Ensalada con Pollo: tiritas de pollo a la plancha con repollo, zanahoria, remolacha, manzana verde, pistachos y pasas con vinagreta de mostaza y lima.",
-        kcal: 340,
+        description: "Crocante & Colorida Ensalada con Pollo: tiritas de pollo a la plancha con repollo, zanahoria, remolacha, manzana verde, pistachos y pasas — porcion liviana con abundantes verdes.",
+        kcal: 300,
         recipeId: 'ensalada-pollo-crocante',
         cookForDays: 2,
       },
       dessertDinner: {
-        description: "Mousse de Cacao & Palta by Cora: 1 porcion.",
+        description: "Mousse de Cacao & Palta: 1 porcion.",
         kcal: 90,
         recipeId: 'mousse-cacao-palta',
       },
@@ -67,34 +67,33 @@ export const WEEKLY_PLAN: DayPlan[] = [
     day: "Martes",
     focus: "Sobrante ensalada pollo + cabutia relleno",
     targetCalories: 1200,
-    macros: { protein: 74, carbs: 100, fat: 44 },
+    macros: { protein: 84, carbs: 92, fat: 44 },
     meals: {
       breakfast: {
-        description: "Huevos Revueltos + Palta: 2 huevos + 1/4 palta + cafe con leche deslactosada.",
-        kcal: 280,
+        description: "Huevos Revueltos con Jamon Crudo: 2 huevos + 2 fetas de jamon crudo + 1/4 palta + te.",
+        kcal: 300,
       },
       lunch: {
-        description: "Crocante Ensalada con Pollo: porcion del lunes.",
+        description: "Crocante Ensalada con Pollo: porcion completa del lunes.",
         kcal: 340,
         recipeId: 'ensalada-pollo-crocante',
       },
       dessertLunch: {
-        description: "Brownie de Cora: 1 porcion.",
-        kcal: 100,
-        recipeId: 'brownie-cora',
+        description: "Chocolate Negro 85%: 2-3 cuadraditos.",
+        kcal: 70,
       },
       snack: {
-        description: "(Opcional) Merienda: yogur descremado con frutos rojos (80g).",
-        kcal: 80,
+        description: "(Opcional) Colacion: yogurt griego + frutos rojos (80g).",
+        kcal: 90,
       },
       dinner: {
-        description: "Cabutia Relleno de Carne Picada: zapallo relleno con carne picada, puerro, cebolla, pimenton ahumado, queso y sesamo + mix de verdes.",
-        kcal: 350,
+        description: "Cabutia Relleno de Carne Picada: zapallo relleno con carne picada, puerro, cebolla, pimenton ahumado, sesamo y semillas — porcion liviana + mix de verdes.",
+        kcal: 310,
         recipeId: 'cabutia-relleno',
         cookForDays: 2,
       },
       dessertDinner: {
-        description: "Trufas de Algarroba y Canela by Cora: 1 trufa.",
+        description: "Trufas de Algarroba y Canela: 1 trufa.",
         kcal: 65,
         recipeId: 'trufas-algarroba-canela',
       },
@@ -102,16 +101,16 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Miercoles",
-    focus: "Sobrante cabutia + salmon a la mostaza",
+    focus: "Sobrante cabutia + salmon almendrado",
     targetCalories: 1200,
-    macros: { protein: 72, carbs: 96, fat: 46 },
+    macros: { protein: 84, carbs: 88, fat: 46 },
     meals: {
       breakfast: {
-        description: "Huevos con Queso + Mani: 2 huevos + 20g queso + 10g mani + cafe con leche deslactosada.",
-        kcal: 310,
+        description: "Huevos con Semillas + Mani: 2 huevos + semillas de calabaza + 10g mani + te.",
+        kcal: 300,
       },
       lunch: {
-        description: "Cabutia Relleno: porcion del martes.",
+        description: "Cabutia Relleno: porcion completa del martes + mix de verdes.",
         kcal: 350,
         recipeId: 'cabutia-relleno',
       },
@@ -121,17 +120,17 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pudding-chia-frutos-rojos',
       },
       snack: {
-        description: "(Opcional) Merienda: cafe con 10g almendras.",
+        description: "(Opcional) Colacion: te con 10g almendras.",
         kcal: 65,
       },
       dinner: {
-        description: "Salmon a la Mostaza: filet al horno con cobertura de mostaza Dijon y mermelada de damascos + ensalada de rucula, cherry, cilantro y almendras tostadas.",
-        kcal: 340,
-        recipeId: 'salmon-mostaza',
+        description: "Salmon al Horno Almendrado: filet con costra de almendras, ajo y perejil — porcion liviana + ensalada verde con pepino y repollo.",
+        kcal: 300,
+        recipeId: 'salmon-almendrado',
         cookForDays: 2,
       },
       dessertDinner: {
-        description: "Mousse de Cacao & Palta by Cora: 1 porcion.",
+        description: "Mousse de Cacao & Palta: 1 porcion.",
         kcal: 90,
         recipeId: 'mousse-cacao-palta',
       },
@@ -141,34 +140,35 @@ export const WEEKLY_PLAN: DayPlan[] = [
     day: "Jueves",
     focus: "Sobrante salmon + croquetones de pollo",
     targetCalories: 1200,
-    macros: { protein: 76, carbs: 94, fat: 46 },
+    macros: { protein: 86, carbs: 86, fat: 46 },
     meals: {
       breakfast: {
-        description: "Tostada + Palta + Huevo: 1 tostada integral + 1/4 palta + 1 huevo + cafe con leche deslactosada.",
-        kcal: 300,
+        description: "Huevos + Palta: 2 huevos + 1/4 palta + te. Opcional: rebanada de pan de almendras y lino.",
+        kcal: 280,
+        recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Salmon a la Mostaza: porcion del miercoles con mix de verdes.",
+        description: "Salmon Almendrado: porcion completa del miercoles con ensalada verde.",
         kcal: 340,
-        recipeId: 'salmon-mostaza',
+        recipeId: 'salmon-almendrado',
       },
       dessertLunch: {
-        description: "Dulce de Leche de Datiles by Cora: 1 cda sobre rodajas de banana.",
+        description: "Dulce de Leche de Datiles: 1 cda sobre rodajas de banana.",
         kcal: 90,
         recipeId: 'dulce-leche-datiles',
       },
       snack: {
-        description: "(Opcional) Merienda: frutos rojos (80g).",
-        kcal: 40,
+        description: "(Opcional) Colacion: yogurt griego + frutos rojos (80g).",
+        kcal: 90,
       },
       dinner: {
-        description: "Croquetones de Pollo estilo Miami Juice: pollo desmenuzado con zanahoria, ajo, sesamo y palta pisada como mayonesa saludable + abundante mix de verdes.",
-        kcal: 340,
+        description: "Croquetones de Pollo estilo Miami Juice: pollo desmenuzado con zanahoria, ajo, sesamo y palta pisada — porcion liviana + abundante mix de verdes y semillas.",
+        kcal: 300,
         recipeId: 'croquetones-pollo',
         cookForDays: 2,
       },
       dessertDinner: {
-        description: "Trufas de Cacao by Cora: 1 trufa congelada.",
+        description: "Trufas de Cacao: 1 trufa congelada.",
         kcal: 70,
         recipeId: 'trufas-cacao',
       },
@@ -178,14 +178,14 @@ export const WEEKLY_PLAN: DayPlan[] = [
     day: "Viernes",
     focus: "Sobrante croquetones + ensalada de cuadril",
     targetCalories: 1200,
-    macros: { protein: 78, carbs: 88, fat: 48 },
+    macros: { protein: 88, carbs: 84, fat: 46 },
     meals: {
       breakfast: {
-        description: "Omelette de Jamon: 2 huevos + 30g jamon + 20g queso + cafe con leche deslactosada.",
+        description: "Omelette de Jamon Crudo: 2 huevos + 2 fetas de jamon crudo + semillas + te.",
         kcal: 290,
       },
       lunch: {
-        description: "Croquetones de Pollo: porcion del jueves.",
+        description: "Croquetones de Pollo: porcion completa del jueves + mix de verdes.",
         kcal: 340,
         recipeId: 'croquetones-pollo',
       },
@@ -195,89 +195,88 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'brownie-raw',
       },
       snack: {
-        description: "(Opcional) Merienda: 15g mani tostado.",
+        description: "(Opcional) Colacion: te con 15g mani tostado.",
         kcal: 90,
       },
       dinner: {
-        description: "Ensalada de Cuadril para Enamorar: cuadril sellado con rucula, tomates cherry, parmesano laminado y aceto balsamico.",
-        kcal: 380,
+        description: "Ensalada de Cuadril para Enamorar: cuadril sellado con rucula, tomates cherry, semillas de calabaza, cebolla colorada y aceto — porcion liviana.",
+        kcal: 320,
         recipeId: 'ensalada-cuadril',
         cookForDays: 2,
       },
       dessertDinner: {
-        description: "Trufas de Algarroba y Canela by Cora: 1 trufa.",
+        description: "Barritas de Avena, Limon y Datiles: 1 barrita.",
+        kcal: 75,
+        recipeId: 'barritas-avena-datiles',
+      },
+    }
+  },
+  {
+    day: "Sabado",
+    focus: "Sobrante cuadril + wok multicolor liviano",
+    targetCalories: 1200,
+    macros: { protein: 84, carbs: 90, fat: 44 },
+    meals: {
+      breakfast: {
+        description: "Huevos Revueltos + Palta: 2 huevos + 1/4 palta + te.",
+        kcal: 280,
+      },
+      lunch: {
+        description: "Ensalada de Cuadril: porcion completa del viernes con rucula fresca.",
+        kcal: 370,
+        recipeId: 'ensalada-cuadril',
+      },
+      dessertLunch: {
+        description: "Crumble de Manzanas: 1 porcion.",
+        kcal: 110,
+        recipeId: 'crumble-manzanas',
+      },
+      snack: {
+        description: "(Opcional) Colacion: te con 15g de mani tostado.",
+        kcal: 90,
+      },
+      dinner: {
+        description: "Wok Multicolor de Vegetales: verduras salteadas con sesamo, castanas de caju y salsa de soja + 1 huevo duro.",
+        kcal: 300,
+        recipeId: 'wok-multicolor',
+      },
+      dessertDinner: {
+        description: "Trufas de Algarroba y Canela: 1 trufa.",
         kcal: 65,
         recipeId: 'trufas-algarroba-canela',
       },
     }
   },
   {
-    day: "Sabado",
-    focus: "Sobrante cuadril + churrasco mediterraneo",
+    day: "Domingo",
+    focus: "Sopa crema + chop suey de pollo",
     targetCalories: 1200,
-    macros: { protein: 80, carbs: 90, fat: 46 },
+    macros: { protein: 82, carbs: 96, fat: 42 },
     meals: {
       breakfast: {
-        description: "Huevos Revueltos + Palta: 2 huevos + 1/4 palta + cafe con leche deslactosada.",
+        description: "Huevos Revueltos + Tomate: 2 huevos + tomate + semillas + te.",
         kcal: 280,
       },
       lunch: {
-        description: "Ensalada de Cuadril: porcion del viernes con rucula fresca.",
-        kcal: 380,
-        recipeId: 'ensalada-cuadril',
-      },
-      dessertLunch: {
-        description: "Pudding de Chia & Frutos Rojos: 1 porcion.",
-        kcal: 85,
-        recipeId: 'pudding-chia-frutos-rojos',
-      },
-      snack: {
-        description: "(Opcional) Merienda: cafe con 15g de mani tostado.",
-        kcal: 90,
-      },
-      dinner: {
-        description: "Churrasco de Carne + Ensalada Mediterranea: churrasco a la sarten con tomates cherry, albahaca fresca, lechuga morada, almendras y semillas de calabaza.",
-        kcal: 350,
-        recipeId: 'churrasco-ensalada-mediterranea',
-      },
-      dessertDinner: {
-        description: "Brownie de Cora: 1 porcion.",
-        kcal: 100,
-        recipeId: 'brownie-cora',
-      },
-    }
-  },
-  {
-    day: "Domingo",
-    focus: "Sopa de Cora + chop suey de pollo",
-    targetCalories: 1200,
-    macros: { protein: 70, carbs: 102, fat: 42 },
-    meals: {
-      breakfast: {
-        description: "Huevos con Queso: 2 huevos + 20g queso + tomate + cafe con leche deslactosada.",
-        kcal: 290,
-      },
-      lunch: {
-        description: "Sopa Crema de Vegetales Verdes de Cora: brocoli, coliflor, puerro, apio, espinaca + levadura nutricional y semillas tostadas. Con 1 huevo duro.",
+        description: "Sopa Crema de Vegetales Verdes: brocoli, coliflor, puerro, apio, espinaca + levadura nutricional, semillas tostadas y 1 huevo duro.",
         kcal: 320,
         recipeId: 'sopa-crema-vegetales-verdes',
       },
       dessertLunch: {
-        description: "Crepes de Avena & Almendras by Cora: 1 crepe con fruta.",
-        kcal: 100,
-        recipeId: 'crepes-avena-almendras',
+        description: "Chocolate Negro 85%: 2-3 cuadraditos.",
+        kcal: 70,
       },
       snack: {
-        description: "(Opcional) Merienda: frutos rojos (80g).",
-        kcal: 40,
+        description: "(Opcional) Colacion: yogurt griego + frutos rojos (80g).",
+        kcal: 90,
       },
       dinner: {
         description: "Chop Suey de Pollo & Hongos: pollo en tiritas con puerro, morrones, zanahoria, zucchini, champinones, brotes de soja, salsa de soja + nueces y sesamo.",
-        kcal: 320,
+        kcal: 310,
         recipeId: 'chop-suey-pollo',
       },
       dessertDinner: {
-        description: "Mousse de Cacao & Palta by Cora: 1 porcion.",
+        description: "Mousse de Cacao & Palta: 1 porcion.",
         kcal: 90,
         recipeId: 'mousse-cacao-palta',
       },
