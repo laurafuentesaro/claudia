@@ -325,11 +325,62 @@ export function aggregateIngredients(needs: RecipeNeed[]): AggregatedIngredient[
   return result;
 }
 
+// Shopping list quantity overrides — buy whole units instead of fractions
+const SHOPPING_OVERRIDES: Record<string, string> = {
+  'Morrón rojo': '1 unidad',
+  'Morron': '1 unidad',
+  'Pepino': '1 unidad',
+  'Pepinos': '1 unidad',
+  'Limon': '2 unidades',
+  'Lima': '2 unidades',
+  'Lima o limon': '2 unidades',
+  'Aceite de coco': '1 frasco chico',
+  'Lechuga morada': '1 unidad',
+  'Mix de lechugas, rucula y albahaca': '1 unidad',
+  'Remolacha rallada': '1 unidad',
+  'Manzana verde': '1 unidad',
+  'Manzanas Pink Lady o Fuji': '4 unidades',
+  'Limon (ralladura y jugo)': '2 unidades',
+  'Limon organico (ralladura)': 'REMOVE',
+  'Limon (jugo)': 'REMOVE',
+  'Lima (jugo y ralladura)': '2 unidades',
+  'Repollo blanco': '0.5 unidad',
+  'Repollo blanco (juliana)': '1 bolsita (opcional)',
+  'Repollo colorado': '0.5 unidad',
+  'Zanahoria rallada fina': 'REMOVE',
+  'Zanahoria rallada': '1 bolsita',
+  'Agua': 'REMOVE',
+  'Sal marina': '1 paquete',
+  'Sal marina y pimienta': 'REMOVE',
+  'Sal marina, pimienta, pimenton ahumado': 'REMOVE',
+  'Sal marina o rosa': 'REMOVE',
+  'Sal gruesa': 'REMOVE',
+  'Sal y pimienta': 'REMOVE',
+  'Sal': 'REMOVE',
+  'Puerro (parte verde)': '1 unidad',
+  'Puerro (parte blanca)': 'REMOVE',
+};
+
+function applyShoppingOverrides(ingredients: AggregatedIngredient[]): AggregatedIngredient[] {
+  return ingredients.filter((item) => {
+    const override = SHOPPING_OVERRIDES[item.name];
+    if (override === 'REMOVE') return false;
+    if (override) {
+      const parsed = parseQuantity(override);
+      item.quantities = [parsed];
+    }
+    return true;
+  });
+}
+
 // ─── Convenience: compute full shopping list from global data ──────────
 
 export function computeShoppingList() {
   const recipeNeeds = collectWeeklyRecipes(WEEKLY_PLAN);
-  const ingredients = aggregateIngredients(recipeNeeds);
+  const raw = aggregateIngredients(recipeNeeds);
+
+  // Apply shopping overrides (buy whole units, remove duplicates)
+  const ingredients = applyShoppingOverrides(raw);
 
   // Group by category
   const byCategory = new Map<IngredientCategory, AggregatedIngredient[]>();
