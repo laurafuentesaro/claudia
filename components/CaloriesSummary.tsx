@@ -26,7 +26,7 @@ export const CaloriesSummary: React.FC<CaloriesSummaryProps> = ({
             <span className="text-theme-accent ml-1 text-lg font-normal">kcal</span>
           </div>
           <div className="text-sm text-theme-faint mt-1">
-            objetivo del dia
+            objetivo del día
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ export const CaloriesSummary: React.FC<CaloriesSummaryProps> = ({
             <span className="w-2 h-2 rounded-full bg-theme-accent shrink-0" />
             <span className="text-lg font-medium text-theme-text">{macros.protein}g</span>
           </div>
-          <div className="text-xs text-theme-muted mt-1 ml-4">Proteina</div>
+          <div className="text-xs text-theme-muted mt-1 ml-4">Proteína</div>
           <div className="text-xs text-theme-faint ml-4">{proteinPercent}%</div>
         </div>
         <div className="flex-1 border border-theme-border rounded-lg px-3 py-2.5">

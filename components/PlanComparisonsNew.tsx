@@ -44,7 +44,7 @@ export const PlanComparisons: React.FC = () => {
       dessert: buildDessertItem(currentPlan.meals.dessertLunch),
     },
     ...(currentPlan.meals.snack ? [{
-      meal: buildMealItem('Colacion', currentPlan.meals.snack),
+      meal: buildMealItem('Colación', currentPlan.meals.snack),
     }] : []),
     {
       meal: buildMealItem('Cena', currentPlan.meals.dinner),
