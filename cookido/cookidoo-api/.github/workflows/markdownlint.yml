@@ -1,0 +1,19 @@
+name: Markdownlint
+permissions:
+  contents: read
+
+on: [ push, pull_request ]
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: DavidAnson/markdownlint-cli2-action@v22
+        with:
+          config: '.markdownlint.yaml'
+          globs: |
+            **/*.md
+            !docs/changelog.md
+            !docs/index.md
+            !docs/license.md

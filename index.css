@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Theme CSS Variables */
+:root,
+[data-theme="dark"] {
+  --color-theme-bg: #0a0a0a;
+  --color-theme-card: #111111;
+  --color-theme-elevated: #171717;
+  --color-theme-border: #262626;
+  --color-theme-border-hover: #404040;
+  --color-theme-text: #fafafa;
+  --color-theme-secondary: #a1a1a1;
+  --color-theme-muted: #737373;
+  --color-theme-faint: #525252;
+  --color-theme-accent: #c2762e;
+  --color-theme-accent-hover: #d4885a;
+}
+
+[data-theme="light"] {
+  --color-theme-bg: #fafafa;
+  --color-theme-card: #ffffff;
+  --color-theme-elevated: #f5f5f5;
+  --color-theme-border: #e5e5e5;
+  --color-theme-border-hover: #d4d4d4;
+  --color-theme-text: #0a0a0a;
+  --color-theme-secondary: #525252;
+  --color-theme-muted: #737373;
+  --color-theme-faint: #a1a1a1;
+  --color-theme-accent: #b86520;
+  --color-theme-accent-hover: #9a5518;
+}
+
+@theme {
+  --color-theme-bg: var(--color-theme-bg);
+  --color-theme-card: var(--color-theme-card);
+  --color-theme-elevated: var(--color-theme-elevated);
+  --color-theme-border: var(--color-theme-border);
+  --color-theme-border-hover: var(--color-theme-border-hover);
+  --color-theme-text: var(--color-theme-text);
+  --color-theme-secondary: var(--color-theme-secondary);
+  --color-theme-muted: var(--color-theme-muted);
+  --color-theme-faint: var(--color-theme-faint);
+  --color-theme-accent: var(--color-theme-accent);
+  --color-theme-accent-hover: var(--color-theme-accent-hover);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
