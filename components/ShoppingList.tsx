@@ -2,28 +2,33 @@ import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import { computeShoppingList } from '../data/shoppingList';
 import { CATEGORY_ORDER } from '../data/ingredientCategories';
 import { ShoppingListCategory } from './ShoppingListCategory';
+import { usePlan } from '../PlanContext';
 
-const STORAGE_KEY = 'shopping-list-checked';
-
-function loadChecked(): Set<string> {
+function loadChecked(storageKey: string): Set<string> {
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(storageKey);
     if (stored) return new Set(JSON.parse(stored));
   } catch {}
   return new Set();
 }
 
-function saveChecked(checked: Set<string>) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(checked)));
+function saveChecked(storageKey: string, checked: Set<string>) {
+  localStorage.setItem(storageKey, JSON.stringify(Array.from(checked)));
 }
 
 export const ShoppingList: React.FC = () => {
-  const data = useMemo(() => computeShoppingList(), []);
-  const [checkedItems, setCheckedItems] = useState<Set<string>>(() => loadChecked());
+  const { activePlan } = usePlan();
+  const storageKey = `shopping-list-checked-${activePlan.id}`;
+  const data = useMemo(() => computeShoppingList(activePlan.plan), [activePlan]);
+  const [checkedItems, setCheckedItems] = useState<Set<string>>(() => loadChecked(storageKey));
 
   useEffect(() => {
-    saveChecked(checkedItems);
-  }, [checkedItems]);
+    setCheckedItems(loadChecked(storageKey));
+  }, [storageKey]);
+
+  useEffect(() => {
+    saveChecked(storageKey, checkedItems);
+  }, [checkedItems, storageKey]);
 
   const toggleItem = useCallback((id: string) => {
     setCheckedItems((prev) => {

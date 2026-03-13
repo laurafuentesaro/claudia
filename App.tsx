@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { PlanComparisons } from './components/PlanComparisonsNew';
 import { ShoppingList } from './components/ShoppingList';
+import { Recetario } from './components/Recetario';
 import { ViewToggle, type ViewMode } from './components/ViewToggle';
 import { Header } from './components/Header';
 import { ThemeProvider } from './ThemeContext';
+import { PlanProvider, usePlan } from './PlanContext';
+import { PlanSelector } from './components/PlanSelector';
 
 const AppContent: React.FC = () => {
   const [view, setView] = useState<ViewMode>('plan');
+  const { activePlan } = usePlan();
 
   return (
     <div className="min-h-screen bg-theme-bg text-theme-text selection:bg-theme-accent/10 transition-colors duration-200">
@@ -18,12 +22,15 @@ const AppContent: React.FC = () => {
               Estrategia Nutricional
             </h2>
             <p className="text-sm text-theme-secondary">
-              Plan semanal de 1,200 kcal
+              {activePlan.description}
             </p>
           </div>
+          <PlanSelector />
           <ViewToggle active={view} onChange={setView} />
           <div key={view} className="animate-fade-in">
-            {view === 'plan' ? <PlanComparisons /> : <ShoppingList />}
+            {view === 'plan' && <PlanComparisons />}
+            {view === 'shopping' && <ShoppingList />}
+            {view === 'recetario' && <Recetario />}
           </div>
         </div>
       </main>
@@ -34,7 +41,9 @@ const AppContent: React.FC = () => {
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <AppContent />
+      <PlanProvider>
+        <AppContent />
+      </PlanProvider>
     </ThemeProvider>
   );
 };

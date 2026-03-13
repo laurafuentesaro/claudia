@@ -81,6 +81,10 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Atún al natural': 'proteinas',
   'Atun al natural': 'proteinas',
   'Bondiola': 'proteinas',
+  'Merluza': 'proteinas',
+  'Salmón fresco': 'proteinas',
+  'Muslos de pollo deshuesados': 'proteinas',
+  'Pechuga de pollo dorada': 'proteinas',
 
   // Verduras y Hortalizas
   'Zucchini': 'verduras',
@@ -112,6 +116,11 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Lechuga': 'verduras',
   'Champiñones': 'verduras',
   'Salsa de tomate': 'verduras',
+  'Mix de verdes': 'verduras',
+  'Mix de lechugas y albahaca': 'verduras',
+  'Zapallitos': 'verduras',
+  'Brocoli': 'verduras',
+  'Zanahorias ralladas': 'verduras',
 
   // Frutas
   'Palta': 'frutas',
@@ -122,6 +131,8 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Manzanas verdes': 'frutas',
   'Frutos rojos': 'frutas',
   'Fruta congelada': 'frutas',
+  'Arándanos': 'frutas',
+  'Manzanas verdes': 'frutas',
   'Dátiles medjool': 'frutas',
   'Datiles medjool': 'frutas',
   'Zumo de limón': 'frutas',
@@ -136,6 +147,8 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Mantequilla': 'lacteos',
   'Queso rallado': 'lacteos',
   'Queso de bola': 'lacteos',
+  'Queso fresco': 'lacteos',
+  'Parmesano rallado': 'lacteos',
   'Mozzarella light': 'lacteos',
   'Nata': 'lacteos',
 
@@ -144,6 +157,9 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Quinoa': 'granos',
   'Arroz integral cocido': 'granos',
   'Avena': 'granos',
+  'Avena arrollada': 'granos',
+  'Avena laminada': 'granos',
+  'Harina de arroz integral': 'granos',
   'Harina de avena': 'granos',
   'Harina de almendras': 'granos',
   'Harina': 'granos',
@@ -157,6 +173,10 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Mani': 'granos',
   'Semillas de sésamo': 'granos',
   'Semillas de sesamo': 'granos',
+  'Semillas de lino': 'granos',
+  'Semillas de girasol': 'granos',
+  'Semillas de calabaza': 'granos',
+  'Psyllium': 'granos',
   'Mantequilla de maní': 'granos',
   'Mantequilla de mani': 'granos',
 
@@ -188,6 +208,9 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Vinagre': 'condimentos',
   'Polvo de hornear': 'condimentos',
   'Pastilla de caldo de verduras': 'condimentos',
+  'Romero seco': 'condimentos',
+  'Orégano': 'condimentos',
+  'Pimentón dulce': 'condimentos',
 
   // Aceites y Grasas
   'Aceite de oliva': 'aceites',
@@ -195,6 +218,7 @@ const INGREDIENT_CATEGORY_MAP: Record<string, IngredientCategory> = {
   'Aceite de sésamo (opcional)': 'aceites',
   'Aceite de sesamo (opcional)': 'aceites',
   'Aceite de coco': 'aceites',
+  'Aceite de girasol alto oleico': 'aceites',
 
   // Endulzantes
   'Stevia': 'endulzantes',

@@ -66,7 +66,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Martes",
-    focus: "Sobrante ensalada pollo + cabutia relleno",
+    focus: "Repite ensalada pollo + cabutia relleno",
     targetCalories: 1200,
     macros: { protein: 84, carbs: 92, fat: 44 },
     meals: {
@@ -76,7 +76,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Crocante Ensalada con Pollo: porción completa del lunes.",
+        description: "Crocante Ensalada con Pollo (receta noche anterior): porción completa.",
         kcal: 340,
         recipeId: 'ensalada-pollo-crocante',
       },
@@ -104,7 +104,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Miércoles",
-    focus: "Sobrante cabutia + salmón almendrado",
+    focus: "Repite cabutia + salmón almendrado",
     targetCalories: 1200,
     macros: { protein: 84, carbs: 88, fat: 46 },
     meals: {
@@ -114,7 +114,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Cabutia Relleno: porción completa del martes + mix de verdes.",
+        description: "Cabutia Relleno (receta noche anterior): porción completa + mix de verdes.",
         kcal: 350,
         recipeId: 'cabutia-relleno',
       },
@@ -142,7 +142,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Jueves",
-    focus: "Sobrante salmón + croquetones de pollo",
+    focus: "Repite salmón + croquetones de pollo",
     targetCalories: 1200,
     macros: { protein: 86, carbs: 86, fat: 46 },
     meals: {
@@ -152,7 +152,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Salmón Almendrado: porción completa del miércoles con ensalada verde.",
+        description: "Salmón Almendrado (receta noche anterior): porción completa con ensalada verde.",
         kcal: 340,
         recipeId: 'salmón-almendrado',
       },
@@ -180,7 +180,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Viernes",
-    focus: "Sobrante croquetones + ensalada de cuadril",
+    focus: "Repite croquetones + ensalada de cuadril",
     targetCalories: 1200,
     macros: { protein: 88, carbs: 84, fat: 46 },
     meals: {
@@ -190,7 +190,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Croquetones de Pollo: porción completa del jueves + mix de verdes.",
+        description: "Croquetones de Pollo (receta noche anterior): porción completa + mix de verdes.",
         kcal: 340,
         recipeId: 'croquetones-pollo',
       },
@@ -204,7 +204,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         kcal: 90,
       },
       dinner: {
-        description: "Ensalada de Cuadril para Enamorar: cuadril sellado con rúcula, tomates cherry, semillas de calabaza, cebolla de verdeo y aceto.",
+        description: "Ensalada de Cuadril para Enamorar: cuadril sellado con mix de verdes, tomates cherry, semillas de calabaza, cebolla de verdeo y aceto.",
         kcal: 320,
         recipeId: 'ensalada-cuadril',
         cookForDays: 2,
@@ -218,7 +218,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
   },
   {
     day: "Sábado",
-    focus: "Sobrante cuadril + wok multicolor",
+    focus: "Repite cuadril + wok multicolor",
     targetCalories: 1200,
     macros: { protein: 84, carbs: 90, fat: 44 },
     meals: {
@@ -228,7 +228,7 @@ export const WEEKLY_PLAN: DayPlan[] = [
         recipeId: 'pan-almendras-lino',
       },
       lunch: {
-        description: "Ensalada de Cuadril: porción completa del viernes con rúcula fresca.",
+        description: "Ensalada de Cuadril (receta noche anterior): porción completa con mix de verdes.",
         kcal: 370,
         recipeId: 'ensalada-cuadril',
       },

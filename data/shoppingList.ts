@@ -336,7 +336,7 @@ const SHOPPING_OVERRIDES: Record<string, string> = {
   'Lima o limón': '2 unidades',
   'Aceite de coco': '1 frasco chico',
   'Lechuga morada': '1 unidad',
-  'Mix de lechugas, rúcula y albahaca': '1 unidad',
+  'Mix de lechugas y albahaca': '1 unidad',
   'Remolacha rallada': '1 unidad',
   'Manzana verde': '1 unidad',
   'Manzanas Pink Lady o Fuji': '4 unidades',
@@ -359,6 +359,22 @@ const SHOPPING_OVERRIDES: Record<string, string> = {
   'Sal': 'REMOVE',
   'Puerro (parte verde)': '1 unidad',
   'Puerro (parte blanca)': 'REMOVE',
+  'Merluza': '200g',
+  'Psyllium': '1 paquete chico',
+  'Romero seco': '1 frasco',
+  'Semillas de lino': '1 paquete',
+  'Mix de verdes': '2 unidades',
+  'Brócoli': '1 unidad',
+  'Cabutia (zapallo)': '1/2 grande',
+  'Pulpa de tomate (sin cebolla ni ajo)': '1 envase',
+  'Muslos de pollo deshuesados': '400g',
+  'Aceite saborizado con ajo': 'REMOVE',
+  'Huevo duro': 'REMOVE',
+  'Zanahorias ralladas': 'REMOVE',
+  'Avena laminada': '1 paquete',
+  'Avena arrollada': '1 paquete',
+  'Manzanas verdes': '4 unidades',
+  'Arándanos': '1 bandejita',
 };
 
 function applyShoppingOverrides(ingredients: AggregatedIngredient[]): AggregatedIngredient[] {
@@ -375,8 +391,8 @@ function applyShoppingOverrides(ingredients: AggregatedIngredient[]): Aggregated
 
 // ─── Convenience: compute full shopping list from global data ──────────
 
-export function computeShoppingList() {
-  const recipeNeeds = collectWeeklyRecipes(WEEKLY_PLAN);
+export function computeShoppingList(plan?: DayPlan[]) {
+  const recipeNeeds = collectWeeklyRecipes(plan ?? WEEKLY_PLAN);
   const raw = aggregateIngredients(recipeNeeds);
 
   // Apply shopping overrides (buy whole units, remove duplicates)

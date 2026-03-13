@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DaySelector } from './DaySelector';
 import { CaloriesSummary } from './CaloriesSummary';
 import { MealTimeline } from './MealTimeline';
-import { WEEKLY_PLAN } from '../data/weeklyPlan';
+import { usePlan } from '../PlanContext';
 import { getRecipe } from '../data/recipes';
 import type { MealItemData } from './MealTimelineItem';
 
 export const PlanComparisons: React.FC = () => {
+  const { activePlan } = usePlan();
+  const weeklyPlan = activePlan.plan;
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
-  const currentPlan = WEEKLY_PLAN[selectedDayIndex];
+
+  useEffect(() => {
+    setSelectedDayIndex(0);
+  }, [activePlan.id]);
+
+  const currentPlan = weeklyPlan[selectedDayIndex];
 
 
   const buildMealItem = (
@@ -56,7 +63,7 @@ export const PlanComparisons: React.FC = () => {
     <div className="space-y-6">
       <div className="bg-theme-card border border-theme-border rounded-lg overflow-hidden transition-colors">
         <DaySelector
-          days={WEEKLY_PLAN.map(p => p.day)}
+          days={weeklyPlan.map(p => p.day)}
           selectedIndex={selectedDayIndex}
           onSelect={setSelectedDayIndex}
         />
